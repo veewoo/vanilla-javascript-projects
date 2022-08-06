@@ -1,0 +1,61 @@
+.agenda-tab {
+  &__header-item {
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      flex: 1;
+    }
+
+    hr {
+      border: none;
+    }
+  }
+
+  &__header-item:not(.swiper-slide-thumb-active) hr {
+    height: 1px;
+    background-color: $chinese-silver;
+    opacity: 0.25;
+  }
+
+  &__header-item.swiper-slide-thumb-active hr {
+    height: 3px;
+    background-color: $primary-color;
+  }
+
+  &__content-item {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__content-item--left,
+  &__content-item--right {
+    flex: 1;
+  }
+
+  &__content-item--left {
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      padding-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content-item--right {
+    @media (min-width: 768px) {
+      padding-left: 20px;
+    }
+  }
+
+  &__content-image {
+    width: 100%;
+  }
+
+  &__content-title {
+    font-size: 36px;
+    line-height: 39.6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

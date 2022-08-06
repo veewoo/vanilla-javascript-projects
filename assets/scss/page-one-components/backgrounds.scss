@@ -1,0 +1,169 @@
+.background-secondary {
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.background-primary {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.background-tertiary {
+    background-color: $tertiary-color;
+    color: $primary-color;
+}
+
+.background-vanguard-15 {
+    background-color: $vanguard-15;
+    color: $primary-color;
+}
+
+.background-vanguard {
+    background-color: $vanguard;
+    color: $secondary-color;
+
+    .r-block {
+        &::before,
+        &::after {
+            background-color: $haze;
+        }
+    }
+
+    &.rte-block .rte-block-single__inner {
+        a:not([class]) {
+           color: $secondary-color;
+           box-shadow: 0px 1px 0px $secondary-color;
+
+           &:hover {
+            color: $secondary-color;
+            box-shadow: 0px 2px 0px $secondary-color;
+           }
+        }
+    }
+}
+
+body.arvato--b2c {
+    .background-vanguard-15 {
+        background-color: $vanguard-15;
+        color: $primary-color;
+
+        h1,h2 {
+            color: $primary-color!important;
+        }
+        
+        .r-block {
+            &::before,
+            &::after {
+                background-color: $vanguard;
+            }
+        }
+    }
+
+    .background-tertiary {
+        background-color: $tertiary-color;
+        color: $primary-color;
+
+        h1,h2 {
+            color: $primary-color;
+
+            &.text-vanguard {
+                color: $vanguard;
+            }
+        }
+
+        .r-block {
+            &::before,
+            &::after {
+                background-color: $vanguard;
+            }
+        }
+    }
+
+    h1,h2 {
+        color: $charcoal;
+
+        &.text-vanguard {
+            color: $vanguard;
+        }
+    }
+
+    .r-block {
+        &::before,
+        &::after {
+            background-color: $vanguard;
+        }
+    }
+
+    .background-primary {
+        background-color: $primary-color;
+        color: $secondary-color;
+
+        h1,h2 {
+            color: $secondary-color;
+
+            &.text-vanguard {
+                color: $secondary-color;
+            }
+        }
+
+        .r-block {
+            &::before,
+            &::after {
+                background-color: $vanguard;
+            }
+        }
+    }
+
+
+    .r-block {
+        &::before,
+        &::after {
+            background-color: $vanguard;
+        }
+    }
+
+    .background-secondary {
+        h1,h2 {
+            color: $primary-color;
+
+            &.text-vanguard {
+                color: $vanguard;
+            }
+        }
+
+        .r-block {
+            &::before,
+            &::after {
+                background-color: $vanguard;
+            }
+        }
+    }
+
+
+    .background-vanguard {
+        h2 {
+            color: $secondary-color;
+        }
+
+        .button-primary {
+            background-color: $haze;
+        }
+
+        .button-secondary {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+
+        .cta {
+            background-color: $secondary-color;
+        }
+
+
+        .r-block {
+            &::before,
+            &::after {
+                background-color: $haze!important;
+            }
+        }
+    }
+}

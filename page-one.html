@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veewoo</title>
+    <meta name="description" content="A simple HTML5 Template." />
+    <meta name="author" content="Veewoo" />
+    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="A simple HTML5 Template." />
+    <meta property="og:image" content="image.png" />
+
+    <!-- <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"
+    />
+    <link rel="stylesheet" href="assets/css/page-one.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="hero-picture-block--asset-full-width rte-block">
+        <div
+          class="hero-picture-block hero-picture-block--min-h-md content content--py-0"
+        >
+          <div class="hero-picture-block__content">
+            <h2 class="hero-picture-block__title">Suspendisse mi justo</h2>
+            <p class="hero-picture-block__description">
+              Augue sem metus, dictum lacinia sem.
+            </p>
+            <a class="hero-picture-block__button" href="#" target="_blank">
+              SUSPENDISSE TEMPUS
+            </a>
+          </div>
+          <div class="stage-overlay stage-overlay--dark"></div>
+          <div class="stage-overlay stage-overlay--light"></div>
+          <picture>
+            <!-- desktop 1920x1080 1x, 3840x2160 2x-->
+            <source
+              media="(min-width: 1025px)"
+              srcset="https://picsum.photos/1200/900?random=1&blur=2&grayscale"
+            />
+
+            <!-- tablet 1920x1080 -->
+            <source
+              media="(min-width: 768px)"
+              srcset="https://picsum.photos/800/600?random=1&blur=2&grayscale"
+            />
+
+            <!-- mobile 390x697-->
+            <source
+              media="(min-width: 320px)"
+              srcset="https://picsum.photos/400/300?random=1&blur=2&grayscale"
+            />
+
+            <!-- desktop -->
+            <img
+              class="hero-picture-block__image"
+              height="1080"
+              width="1920"
+              src="/img/test-images/hero-banner.png"
+              alt="hero banner"
+            />
+          </picture>
+        </div>
+      </section>
+      <section
+        class="hero-video-block hero-video-block--dark hero-video-block--playing hero-picture-block--asset-full-width rte-block"
+      >
+        <div
+          class="hero-picture-block hero-picture-block--dark hero-picture-block--min-h-md content content--py-0"
+        >
+          <div class="hero-picture-block__content">
+            <h2 class="hero-picture-block__title">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="hero-picture-block__description">
+              Etiam a lorem nec lacus feugiat egestas ut in lacus.
+            </p>
+            <a class="hero-picture-block__button" href="#">
+              PELLENTESQUE HABITANT
+            </a>
+          </div>
+          <button
+            class="hero-video-block__btn-play hero-video-block__btn-play--primary"
+          >
+            <img src="/assets/icons/play-button.svg" alt="PLAY" />
+            <img
+              class="hero-video-block__icon--dark"
+              src="/assets/icons/dark-play-button.svg"
+              alt="PLAY"
+            />
+          </button>
+          <div class="stage-overlay stage-overlay--dark"></div>
+          <div class="stage-overlay stage-overlay--light"></div>
+          <video
+            class="hero-picture-block__video main__hero--video-desktop"
+            width="1920"
+            height="1080"
+            autoplay
+            loop
+            poster="https://ak.picdn.net/shutterstock/videos/1044255715/preview/stock-footage-person-signing-important-document-camera-following-tip-of-the-pen-as-it-signs-crucial-business.mp4"
+            muted
+            src="https://ak.picdn.net/shutterstock/videos/1044255715/preview/stock-footage-person-signing-important-document-camera-following-tip-of-the-pen-as-it-signs-crucial-business.mp4"
+          ></video>
+          <video
+            class="hero-picture-block__video main__hero--video-mobile"
+            width="390"
+            height="302"
+            autoplay
+            loop
+            poster="https://ak.picdn.net/shutterstock/videos/1091836377/preview/stock-footage-close-up-of-a-pen-writing-a-person-makes-notes-in-a-notebook-with-a-ballpoint-pen-fake-lorem.mp4"
+            muted
+            src="https://ak.picdn.net/shutterstock/videos/1091836377/preview/stock-footage-close-up-of-a-pen-writing-a-person-makes-notes-in-a-notebook-with-a-ballpoint-pen-fake-lorem.mp4"
+          ></video>
+        </div>
+        <div
+          class="hero-video-block__bottom-content hero-video-block__bottom-content--mt-negative-lg content content--py-0"
+        >
+          <button
+            class="hero-video-block__btn-play hero-video-block__btn-play--secondary"
+          >
+            <span class="hero-video-block__play-icon">
+              <img src="/assets/icons/play-button-secondary.svg" alt="PLAY" />
+              <img
+                src="/assets/icons/dark-play-button-secondary.svg"
+                alt="PLAY"
+                class="hero-video-block__icon--dark"
+              />
+            </span>
+            <span class="hero-video-block__pause-icon">
+              <img src="/assets/icons/pause-button-secondary.svg" alt="PAUSE" />
+              <img
+                src="/assets/icons/dark-pause-button-secondary.svg"
+                alt="PAUSE"
+                class="hero-video-block__icon--dark"
+              />
+            </span>
+          </button>
+          <div
+            class="card-list card-list--d-grid-1 card-list--d-grid-3-md card-list--mt-negative"
+          >
+            <div class="card card--bg-tertiary card--p-5 card--p-md-7_5">
+              <p class="card__sub-title card__sub-title--mb-lg">
+                Pulvinar massa, sagittis, turpis
+              </p>
+              <h2 class="card__title card__title--h1 card__title--text-right">
+                +30
+              </h2>
+              <p
+                class="card__description card__description--text-right card__description--mb-md card__description--mt-auto"
+              >
+                Commodo volutpat amet pellentesque enim. Dolor vel viverra
+                tristique viverra semper quis euismod. Suspendisse tempus,
+                lectus cursus nulla fermentum ut urna.
+              </p>
+              <hr />
+            </div>
+            <div class="card card--bg-tertiary card--p-5 card--p-md-7_5">
+              <p class="card__sub-title card__sub-title--mb-lg">
+                Pulvinar massa, sagittis, turpis
+              </p>
+              <h2 class="card__title card__title--h1 card__title--text-right">
+                100k
+              </h2>
+              <p
+                class="card__description card__description--text-right card__description--mb-md card__description--mt-auto"
+              >
+                Nec nec faucibus posuere sem. Vitae ullamcorper vestibulum,
+                volutpat ridiculus vulputate varius rhoncus lacinia tempor.
+              </p>
+              <hr />
+            </div>
+            <div class="card card--bg-tertiary card--p-5 card--p-md-7_5">
+              <p class="card__sub-title card__sub-title--mb-lg">
+                Pulvinar massa, sagittis, turpis
+              </p>
+              <h2 class="card__title card__title--h1 card__title--text-right">
+                75%
+              </h2>
+              <p
+                class="card__description card__description--text-right card__description--mb-md card__description--mt-auto"
+              >
+                Amet ipsum ultrices velit nibh in in ipsum hendrerit bibendum.
+                Est nec massa amet tristique magnis sed. Tellus nisl, ac nisi,
+                arcu etiam parturient sagittis.
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="key-cards content content--pr-xs-0 content--py-md background-tertiary rte-block"
+        style="margin-top: 160px"
+      >
+        <div class="content__header content__header--mb-md">
+          <h2 class="content__header-title">Morbi eu lectus molestie</h2>
+          <p>Aenean aliquet tempus eros elementum placerat.</p>
+        </div>
+        <div
+          class="card-list-container swiper swiper-pagination-disabled swiper-backface-hidden swiper-initialized swiper-horizontal swiper-pointer-events"
+        >
+          <div
+            class="card-list card-list--d-grid-3-md swiper-wrapper"
+            id="swiper-wrapper-4833c03dbafa6052"
+            aria-live="polite"
+          >
+            <div
+              class="card card--bg-white card--p-5 card--p-md-7_5 swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 6"
+              style="margin-right: 30px"
+            >
+              <hr />
+              <h2 class="card__title">Id cras hendrerit</h2>
+              <p class="card__description">
+                Commodo volutpat amet pellentesque enim. Dolor vel viverra
+                tristique viverra semper quis euismod. Suspendisse tempus,
+                lectus cursus nulla fermentum ut urna.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white card--p-5 card--p-md-7_5 swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="2 / 6"
+              style="margin-right: 30px"
+            >
+              <hr />
+              <h2 class="card__title">Fermentum aliquam aliquam sociis</h2>
+              <p class="card__description">
+                Nec nec faucibus posuere sem. Vitae ullamcorper vestibulum,
+                volutpat ridiculus vulputate varius rhoncus lacinia tempor.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white card--p-5 card--p-md-7_5 swiper-slide"
+              role="group"
+              aria-label="3 / 6"
+              style="margin-right: 30px"
+            >
+              <hr />
+              <h2 class="card__title">Pulvinar imperdiet molestie</h2>
+              <p class="card__description">
+                Amet ipsum ultrices velit nibh in in ipsum hendrerit bibendum.
+                Est nec massa amet tristique magnis sed. Tellus nisl, ac nisi,
+                arcu etiam parturient sagittis.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white card--p-5 card--p-md-7_5 swiper-slide"
+              role="group"
+              aria-label="4 / 6"
+              style="margin-right: 30px"
+            >
+              <hr />
+              <h2 class="card__title">Id cras hendrerit</h2>
+              <p class="card__description">
+                Commodo volutpat amet pellentesque enim. Dolor vel viverra
+                tristique viverra semper quis euismod. Suspendisse tempus,
+                lectus cursus nulla fermentum ut urna.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white card--p-5 card--p-md-7_5 swiper-slide"
+              role="group"
+              aria-label="5 / 6"
+              style="margin-right: 30px"
+            >
+              <hr />
+              <h2 class="card__title">Fermentum aliquam aliquam sociis</h2>
+              <p class="card__description">
+                Nec nec faucibus posuere sem. Vitae ullamcorper vestibulum,
+                volutpat ridiculus vulputate varius rhoncus lacinia tempor.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white card--p-5 card--p-md-7_5 swiper-slide"
+              role="group"
+              aria-label="6 / 6"
+              style="margin-right: 30px"
+            >
+              <hr />
+              <h2 class="card__title">Pulvinar imperdiet molestie</h2>
+              <p class="card__description">
+                Amet ipsum ultrices velit nibh in in ipsum hendrerit bibendum.
+                Est nec massa amet tristique magnis sed. Tellus nisl, ac nisi,
+                arcu etiam parturient sagittis.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </section>
+      <section
+        class="key-cards experts-cards content content--pr-xs-0 content--py-md background-secondary rte-block"
+      >
+        <div class="content__header content__header--mb-md">
+          <h3 class="content__header-title">
+            Suspendisse feugiat augue in commodo varius
+          </h3>
+          <p>Aenean aliquet tempus eros elementum placerat.</p>
+        </div>
+        <div
+          class="card-list-container swiper swiper-pagination-disabled swiper-backface-hidden swiper-initialized swiper-horizontal swiper-pointer-events"
+        >
+          <div
+            class="card-list card-list--d-grid-3-md swiper-wrapper"
+            id="swiper-wrapper-72534a21af88d31e"
+            aria-live="polite"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <div
+              class="card card--bg-white swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  <picture>
+                    <!-- desktop sizes (can be clarified in figma)-->
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="413"
+                      height="550"
+                    />
+                    <!-- tablet sizes (same as desktop 1x)-->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="413"
+                      height="550"
+                    />
+                    <!-- mobile sizes (can be clarified in figma)-->
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="300"
+                      height="400"
+                    />
+                    <!-- desktop -->
+                    <img
+                      class="card__image"
+                      src="https://picsum.photos/340/550?random=1"
+                      alt="card-img-lg-0 banner"
+                      width="413"
+                      height="550"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <h5 class="card__title">
+                <span>
+                  <a
+                    href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                  >
+                    Id cras hendrerit
+                  </a>
+                </span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                  >Chief Strategy Officer
+                </a>
+              </p>
+              <p class="card__description">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  Commodo volutpat amet pellentesque enim. Dolor vel viverra
+                  tristique viverra semper quis euismod. Suspendisse tempus,
+                  lectus cursus nulla fermentum ut urna.
+                </a>
+              </p>
+              <p class="card__link-container">
+                <a
+                  class="card__link cta"
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  DOWNLOAD CV
+                </a>
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="2 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <picture>
+                  <!-- desktop sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 1025px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- tablet sizes (same as desktop 1x)-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- mobile sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="300"
+                    height="400"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="card__image"
+                    src="https://picsum.photos/340/550?random=2"
+                    alt="card-img-lg-1 banner"
+                    width="413"
+                    height="550"
+                  />
+                </picture>
+              </div>
+              <h5 class="card__title">
+                <span>Fermentum aliquam aliquam sociis</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">Chief Strategy Officer</p>
+              <p class="card__description">
+                Nec nec faucibus posuere sem. Vitae ullamcorper vestibulum,
+                volutpat ridiculus vulputate varius rhoncus lacinia tempor.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide"
+              role="group"
+              aria-label="3 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <picture>
+                  <!-- desktop sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 1025px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- tablet sizes (same as desktop 1x)-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- mobile sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="300"
+                    height="400"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="card__image"
+                    src="https://picsum.photos/340/550?random=3"
+                    alt="card-img-lg-2 banner"
+                    width="413"
+                    height="550"
+                  />
+                </picture>
+              </div>
+              <h5 class="card__title">
+                <span>Pulvinar imperdiet molestie</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">Chief Strategy Officer</p>
+              <p class="card__description">
+                Amet ipsum ultrices velit nibh in in ipsum hendrerit bibendum.
+                Est nec massa amet tristique magnis sed. Tellus nisl, ac nisi,
+                arcu etiam parturient sagittis.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </section>
+      <section
+        class="key-cards content content--pr-xs-0 content--py-md background-secondary rte-block"
+      >
+        <div class="content__header content__header--mb-md">
+          <h2 class="content__header-title">Our management team</h2>
+          <p>Bibendum sagittis, ipsum neque, nam duis aliquam vel non.</p>
+        </div>
+        <div
+          class="card-list-container swiper swiper-backface-hidden swiper-initialized swiper-horizontal swiper-pointer-events"
+        >
+          <div
+            class="card-list swiper-wrapper card-list--pagination-custom"
+            id="swiper-wrapper-a55a5fb4122e0331"
+            aria-live="polite"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <div
+              class="card card--bg-white swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  <picture>
+                    <!-- desktop sizes (can be clarified in figma)-->
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="413"
+                      height="550"
+                    />
+                    <!-- tablet sizes (same as desktop 1x)-->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="413"
+                      height="550"
+                    />
+                    <!-- mobile sizes (can be clarified in figma)-->
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="300"
+                      height="400"
+                    />
+                    <!-- desktop -->
+                    <img
+                      class="card__image"
+                      src="https://picsum.photos/340/550?random=1"
+                      alt="card-img-lg-0 banner"
+                      width="413"
+                      height="550"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <h5 class="card__title">
+                <span>
+                  <a
+                    href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                  >
+                    Id cras hendrerit
+                  </a>
+                </span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                  >Chief Strategy Officer
+                </a>
+              </p>
+              <p class="card__description">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  Commodo volutpat amet pellentesque enim. Dolor vel viverra
+                  tristique viverra semper quis euismod. Suspendisse tempus,
+                  lectus cursus nulla fermentum ut urna.
+                </a>
+              </p>
+              <p class="card__link-container">
+                <a
+                  class="card__link cta"
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  DOWNLOAD CV
+                </a>
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="2 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <picture>
+                  <!-- desktop sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 1025px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- tablet sizes (same as desktop 1x)-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- mobile sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="300"
+                    height="400"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="card__image"
+                    src="https://picsum.photos/340/550?random=2"
+                    alt="card-img-lg-1 banner"
+                    width="413"
+                    height="550"
+                  />
+                </picture>
+              </div>
+              <h5 class="card__title">
+                <span>Fermentum aliquam aliquam sociis</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">Chief Strategy Officer</p>
+              <p class="card__description">
+                Nec nec faucibus posuere sem. Vitae ullamcorper vestibulum,
+                volutpat ridiculus vulputate varius rhoncus lacinia tempor.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide"
+              role="group"
+              aria-label="3 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <picture>
+                  <!-- desktop sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 1025px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- tablet sizes (same as desktop 1x)-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- mobile sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="300"
+                    height="400"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="card__image"
+                    src="https://picsum.photos/340/550?random=3"
+                    alt="card-img-lg-2 banner"
+                    width="413"
+                    height="550"
+                  />
+                </picture>
+              </div>
+              <h5 class="card__title">
+                <span>Pulvinar imperdiet molestie</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">Chief Strategy Officer</p>
+              <p class="card__description">
+                Amet ipsum ultrices velit nibh in in ipsum hendrerit bibendum.
+                Est nec massa amet tristique magnis sed. Tellus nisl, ac nisi,
+                arcu etiam parturient sagittis.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  <picture>
+                    <!-- desktop sizes (can be clarified in figma)-->
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="413"
+                      height="550"
+                    />
+                    <!-- tablet sizes (same as desktop 1x)-->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="413"
+                      height="550"
+                    />
+                    <!-- mobile sizes (can be clarified in figma)-->
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="https://picsum.photos/340/550?random=1"
+                      width="300"
+                      height="400"
+                    />
+                    <!-- desktop -->
+                    <img
+                      class="card__image"
+                      src="https://picsum.photos/340/550?random=1"
+                      alt="card-img-lg-0 banner"
+                      width="413"
+                      height="550"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <h5 class="card__title">
+                <span>
+                  <a
+                    href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                  >
+                    Id cras hendrerit
+                  </a>
+                </span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                  >Chief Strategy Officer
+                </a>
+              </p>
+              <p class="card__description">
+                <a
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  Commodo volutpat amet pellentesque enim. Dolor vel viverra
+                  tristique viverra semper quis euismod. Suspendisse tempus,
+                  lectus cursus nulla fermentum ut urna.
+                </a>
+              </p>
+              <p class="card__link-container">
+                <a
+                  class="card__link cta"
+                  href="https://drive.google.com/file/d/13RMGF72W_uh38QGlw20Wf21p0anlFT1n/view"
+                >
+                  DOWNLOAD CV
+                </a>
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="2 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <picture>
+                  <!-- desktop sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 1025px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- tablet sizes (same as desktop 1x)-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- mobile sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="https://picsum.photos/340/550?random=2"
+                    width="300"
+                    height="400"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="card__image"
+                    src="https://picsum.photos/340/550?random=2"
+                    alt="card-img-lg-1 banner"
+                    width="413"
+                    height="550"
+                  />
+                </picture>
+              </div>
+              <h5 class="card__title">
+                <span>Fermentum aliquam aliquam sociis</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">Chief Strategy Officer</p>
+              <p class="card__description">
+                Nec nec faucibus posuere sem. Vitae ullamcorper vestibulum,
+                volutpat ridiculus vulputate varius rhoncus lacinia tempor.
+              </p>
+            </div>
+            <div
+              class="card card--bg-white swiper-slide"
+              role="group"
+              aria-label="3 / 3"
+              style="margin-right: 30px"
+            >
+              <div class="card__image-container card__image-container--h-lg">
+                <picture>
+                  <!-- desktop sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 1025px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- tablet sizes (same as desktop 1x)-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="413"
+                    height="550"
+                  />
+                  <!-- mobile sizes (can be clarified in figma)-->
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="https://picsum.photos/340/550?random=3"
+                    width="300"
+                    height="400"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="card__image"
+                    src="https://picsum.photos/340/550?random=3"
+                    alt="card-img-lg-2 banner"
+                    width="413"
+                    height="550"
+                  />
+                </picture>
+              </div>
+              <h5 class="card__title">
+                <span>Pulvinar imperdiet molestie</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="card__title-icon"
+                >
+                  <img src="/assets/icons/linkedin-sm.svg" alt="linkedin" />
+                </a>
+              </h5>
+              <p class="card__sub-title">Chief Strategy Officer</p>
+              <p class="card__description">
+                Amet ipsum ultrices velit nibh in in ipsum hendrerit bibendum.
+                Est nec massa amet tristique magnis sed. Tellus nisl, ac nisi,
+                arcu etiam parturient sagittis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination swiper-pagination-custom swiper-pagination-horizontal"
+          >
+            <button
+              class="swiper-pagination-custom swiper-pagination-bullet-active"
+              data-index="0"
+            ></button
+            ><button class="swiper-pagination-custom" data-index="3"></button>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </section>
+      <section class="content container">
+        <header
+          class="content__header content__header--mb-md content__header--mw-md-short"
+        >
+          <h2 class="content__header-title">Agenda</h2>
+          <p class="content__header-description">
+            At habitant in et ante leo platea adipiscing id. Quis nulla
+            tincidunt donec mauris turpis ut posuere.
+          </p>
+          <a class="content__header-button button-secondary" href="#"
+            >Download agenda</a
+          >
+        </header>
+        <div
+          class="swiper agenda-tab__header swiper-backface-hidden swiper-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-bdfa1083a5fb5a6108"
+            aria-live="polite"
+          >
+            <label
+              class="swiper-slide agenda-tab__header-item swiper-slide-visible swiper-slide-active swiper-slide-thumb-active"
+              role="group"
+              aria-label="1 / 6"
+              style="margin-right: 10px"
+            >
+              <hr />
+              4:00pm
+            </label>
+            <label
+              class="swiper-slide agenda-tab__header-item swiper-slide-visible swiper-slide-next"
+              role="group"
+              aria-label="2 / 6"
+              style="margin-right: 10px"
+            >
+              <hr />
+              4:30pm
+            </label>
+            <label
+              class="swiper-slide agenda-tab__header-item swiper-slide-visible"
+              role="group"
+              aria-label="3 / 6"
+              style="margin-right: 10px"
+            >
+              <hr />
+              5:00pm
+            </label>
+            <label
+              class="swiper-slide agenda-tab__header-item swiper-slide-visible"
+              role="group"
+              aria-label="4 / 6"
+              style="margin-right: 10px"
+            >
+              <hr />
+              5:30pm
+            </label>
+            <label
+              class="swiper-slide agenda-tab__header-item swiper-slide-visible"
+              role="group"
+              aria-label="5 / 6"
+              style="margin-right: 10px"
+            >
+              <hr />
+              6:00pm
+            </label>
+            <label
+              class="swiper-slide agenda-tab__header-item swiper-slide-visible"
+              role="group"
+              aria-label="6 / 6"
+              style="margin-right: 10px"
+            >
+              <hr />
+              6:30pm
+            </label>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </section>
+      <section class="content background-primary">
+        <div
+          class="swiper agenda-tab__content rte-block swiper-backface-hidden swiper-initialized swiper-horizontal swiper-pointer-events"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-cd5262ac696b37c6"
+            aria-live="polite"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <div
+              class="swiper-slide agenda-tab__content-item swiper-slide-active"
+              role="group"
+              aria-label="1 / 6"
+              style="width: 1320px; margin-right: 10px"
+            >
+              <div class="agenda-tab__content-item--left">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="https://picsum.photos/400/400?random=1"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="https://picsum.photos/400/400?random=1"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="agenda-tab__content-image"
+                    src="https://picsum.photos/400/400?random=1"
+                    alt="hero banner"
+                  />
+                </picture>
+              </div>
+              <div class="agenda-tab__content-item--right">
+                <p class="agenda-tab__content-sub-title">4:00pm</p>
+                <h3 class="agenda-tab__content-title">Conference</h3>
+                <p class="agenda-tab__content-description">
+                  Cursus aliquam eu a nulla velit purus donec. Rhoncus a,
+                  phasellus nisi ut donec. Orci sagittis sem quisque aliquam
+                  platea. Vel purus facilisis ultricies nunc amet, at turpis.
+                  Vestibulum venenatis vitae fermentum sem sollicitudin cras mi
+                  tellus. Netus faucibus amet, vel quis amet, eget feugiat ac.
+                  Mauris ornare hac volutpat turpis. Potenti risus eget sodales
+                  neque. Duis massa ridiculus turpis tristique tincidunt.
+                  Integer sed a libero, venenatis, purus. Dis sit volutpat
+                  iaculis tincidunt tempus. Nec sagittis, diam amet arcu
+                  consequat magna tellus. Vehicula nibh blandit leo molestie leo
+                  turpis tellus quam ultrices. Arcu, non morbi amet, vitae.
+                  Lorem nulla egestas sed scelerisque. Volutpat arcu, tempor
+                  tincidunt non sed id neque ut mauris.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide agenda-tab__content-item swiper-slide-next"
+              role="group"
+              aria-label="2 / 6"
+              style="width: 1320px; margin-right: 10px"
+            >
+              <div class="agenda-tab__content-item--left">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="https://picsum.photos/400/400?random=2"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="https://picsum.photos/400/400?random=2"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="agenda-tab__content-image"
+                    src="https://picsum.photos/400/400?random=2"
+                    alt="hero banner"
+                  />
+                </picture>
+              </div>
+              <div class="agenda-tab__content-item--right">
+                <p class="agenda-tab__content-sub-title">4:30pm</p>
+                <h3 class="agenda-tab__content-title">Conference</h3>
+                <p class="agenda-tab__content-description">
+                  Cursus aliquam eu a nulla velit purus donec. Rhoncus a,
+                  phasellus nisi ut donec. Orci sagittis sem quisque aliquam
+                  platea. Vel purus facilisis ultricies nunc amet, at turpis.
+                  Vestibulum venenatis vitae fermentum sem sollicitudin cras mi
+                  tellus. Netus faucibus amet, vel quis amet, eget feugiat ac.
+                  Mauris ornare hac volutpat turpis. Potenti risus eget sodales
+                  neque. Duis massa ridiculus turpis tristique tincidunt.
+                  Integer sed a libero, venenatis, purus. Dis sit volutpat
+                  iaculis tincidunt tempus. Nec sagittis, diam amet arcu
+                  consequat magna tellus. Vehicula nibh blandit leo molestie leo
+                  turpis tellus quam ultrices. Arcu, non morbi amet, vitae.
+                  Lorem nulla egestas sed scelerisque. Volutpat arcu, tempor
+                  tincidunt non sed id neque ut mauris.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide agenda-tab__content-item"
+              role="group"
+              aria-label="3 / 6"
+              style="width: 1320px; margin-right: 10px"
+            >
+              <div class="agenda-tab__content-item--left">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="https://picsum.photos/400/400?random=3"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="https://picsum.photos/400/400?random=3"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="agenda-tab__content-image"
+                    src="https://picsum.photos/400/400?random=3"
+                    alt="hero banner"
+                  />
+                </picture>
+              </div>
+              <div class="agenda-tab__content-item--right">
+                <p class="agenda-tab__content-sub-title">5:00pm</p>
+                <h3 class="agenda-tab__content-title">Conference</h3>
+                <p class="agenda-tab__content-description">
+                  Cursus aliquam eu a nulla velit purus donec. Rhoncus a,
+                  phasellus nisi ut donec. Orci sagittis sem quisque aliquam
+                  platea. Vel purus facilisis ultricies nunc amet, at turpis.
+                  Vestibulum venenatis vitae fermentum sem sollicitudin cras mi
+                  tellus. Netus faucibus amet, vel quis amet, eget feugiat ac.
+                  Mauris ornare hac volutpat turpis. Potenti risus eget sodales
+                  neque. Duis massa ridiculus turpis tristique tincidunt.
+                  Integer sed a libero, venenatis, purus. Dis sit volutpat
+                  iaculis tincidunt tempus. Nec sagittis, diam amet arcu
+                  consequat magna tellus. Vehicula nibh blandit leo molestie leo
+                  turpis tellus quam ultrices. Arcu, non morbi amet, vitae.
+                  Lorem nulla egestas sed scelerisque. Volutpat arcu, tempor
+                  tincidunt non sed id neque ut mauris.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide agenda-tab__content-item"
+              role="group"
+              aria-label="4 / 6"
+              style="width: 1320px; margin-right: 10px"
+            >
+              <div class="agenda-tab__content-item--left">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="https://picsum.photos/400/400?random=4"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="https://picsum.photos/400/400?random=4"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="agenda-tab__content-image"
+                    src="https://picsum.photos/400/400?random=4"
+                    alt="hero banner"
+                  />
+                </picture>
+              </div>
+              <div class="agenda-tab__content-item--right">
+                <p class="agenda-tab__content-sub-title">5:30pm</p>
+                <h3 class="agenda-tab__content-title">Conference</h3>
+                <p class="agenda-tab__content-description">
+                  Cursus aliquam eu a nulla velit purus donec. Rhoncus a,
+                  phasellus nisi ut donec. Orci sagittis sem quisque aliquam
+                  platea. Vel purus facilisis ultricies nunc amet, at turpis.
+                  Vestibulum venenatis vitae fermentum sem sollicitudin cras mi
+                  tellus. Netus faucibus amet, vel quis amet, eget feugiat ac.
+                  Mauris ornare hac volutpat turpis. Potenti risus eget sodales
+                  neque. Duis massa ridiculus turpis tristique tincidunt.
+                  Integer sed a libero, venenatis, purus. Dis sit volutpat
+                  iaculis tincidunt tempus. Nec sagittis, diam amet arcu
+                  consequat magna tellus. Vehicula nibh blandit leo molestie leo
+                  turpis tellus quam ultrices. Arcu, non morbi amet, vitae.
+                  Lorem nulla egestas sed scelerisque. Volutpat arcu, tempor
+                  tincidunt non sed id neque ut mauris.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide agenda-tab__content-item"
+              role="group"
+              aria-label="5 / 6"
+              style="width: 1320px; margin-right: 10px"
+            >
+              <div class="agenda-tab__content-item--left">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="https://picsum.photos/400/400?random=5"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="https://picsum.photos/400/400?random=5"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="agenda-tab__content-image"
+                    src="https://picsum.photos/400/400?random=5"
+                    alt="hero banner"
+                  />
+                </picture>
+              </div>
+              <div class="agenda-tab__content-item--right">
+                <p class="agenda-tab__content-sub-title">6:00pm</p>
+                <h3 class="agenda-tab__content-title">Conference</h3>
+                <p class="agenda-tab__content-description">
+                  Cursus aliquam eu a nulla velit purus donec. Rhoncus a,
+                  phasellus nisi ut donec. Orci sagittis sem quisque aliquam
+                  platea. Vel purus facilisis ultricies nunc amet, at turpis.
+                  Vestibulum venenatis vitae fermentum sem sollicitudin cras mi
+                  tellus. Netus faucibus amet, vel quis amet, eget feugiat ac.
+                  Mauris ornare hac volutpat turpis. Potenti risus eget sodales
+                  neque. Duis massa ridiculus turpis tristique tincidunt.
+                  Integer sed a libero, venenatis, purus. Dis sit volutpat
+                  iaculis tincidunt tempus. Nec sagittis, diam amet arcu
+                  consequat magna tellus. Vehicula nibh blandit leo molestie leo
+                  turpis tellus quam ultrices. Arcu, non morbi amet, vitae.
+                  Lorem nulla egestas sed scelerisque. Volutpat arcu, tempor
+                  tincidunt non sed id neque ut mauris.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide agenda-tab__content-item"
+              role="group"
+              aria-label="6 / 6"
+              style="width: 1320px; margin-right: 10px"
+            >
+              <div class="agenda-tab__content-item--left">
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="https://picsum.photos/400/400?random=1"
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="https://picsum.photos/400/400?random=1"
+                  />
+                  <!-- desktop -->
+                  <img
+                    class="agenda-tab__content-image"
+                    src="https://picsum.photos/400/400?random=1"
+                    alt="hero banner"
+                  />
+                </picture>
+              </div>
+              <div class="agenda-tab__content-item--right">
+                <p class="agenda-tab__content-sub-title">6:30pm</p>
+                <h3 class="agenda-tab__content-title">Conference</h3>
+                <p class="agenda-tab__content-description">
+                  Cursus aliquam eu a nulla velit purus donec. Rhoncus a,
+                  phasellus nisi ut donec. Orci sagittis sem quisque aliquam
+                  platea. Vel purus facilisis ultricies nunc amet, at turpis.
+                  Vestibulum venenatis vitae fermentum sem sollicitudin cras mi
+                  tellus. Netus faucibus amet, vel quis amet, eget feugiat ac.
+                  Mauris ornare hac volutpat turpis. Potenti risus eget sodales
+                  neque. Duis massa ridiculus turpis tristique tincidunt.
+                  Integer sed a libero, venenatis, purus. Dis sit volutpat
+                  iaculis tincidunt tempus. Nec sagittis, diam amet arcu
+                  consequat magna tellus. Vehicula nibh blandit leo molestie leo
+                  turpis tellus quam ultrices. Arcu, non morbi amet, vitae.
+                  Lorem nulla egestas sed scelerisque. Volutpat arcu, tempor
+                  tincidunt non sed id neque ut mauris.
+                </p>
+              </div>
+            </div>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </section>
+      <section class="content content--py-md">
+        <div class="form-container">
+          <div class="form-detail content__header content__header--mb-md">
+            <h2 class="content__header-title">Sign up</h2>
+            <p>
+              A non, duis sem habitant proin ut purus sapien. Nulla in eget at
+              viverra ultricies fringilla diam ullamcorper.
+            </p>
+          </div>
+          <form class="form" action="/submit" id="">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="firstName">First name</label>
+                <input class="form__control" type="text" id="firstName" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="lastName">Last name</label>
+                <input class="form__control" type="text" id="lastName" />
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email"
+                >Business e-mail (requited)</label
+              >
+              <input
+                class="form__control"
+                type="email"
+                id="email"
+                required=""
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="companyName">Company name</label>
+              <input class="form__control" type="text" id="companyName" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="jobTitle">Job title</label>
+              <input class="form__control" type="text" id="jobTitle" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="industry">Industry</label>
+              <div class="form__select-container">
+                <select class="form__control" id="industry">
+                  <option value="" selected="" disabled="" hidden="">
+                    Industry (please select)
+                  </option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phoneNumber">Phone Number</label>
+              <input class="form__control" type="text" id="phoneNumber" />
+            </div>
+            <div class="form__group">
+              <div class="form__check">
+                <input
+                  class="form__control"
+                  type="checkbox"
+                  id="cboxAgreeOtherCommunications"
+                />
+                <label
+                  class="form__check-label"
+                  for="cboxAgreeOtherCommunications"
+                >
+                  I agree to receive other communications from Arvato Limited.
+                  In order to provide you the content requested, we need to
+                  store and process your personal data. If you consent to this
+                  please tick the checkbox below.
+                </label>
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="form__check">
+                <input
+                  class="form__control"
+                  type="checkbox"
+                  id="cboxStorePersonalData"
+                />
+                <label class="form__check-label" for="cboxStorePersonalData">
+                  I agree to allow Arvato Limited to store and process my
+                  personal data.* The Arvato CRM Solutions privacy notice and
+                  associated Bertelsmann privacy notice can be viewed here.
+                </label>
+              </div>
+            </div>
+            <div class="form__btn-container background-primary">
+              <button class="form__btn-submit button-primary" type="submit">
+                SIGN UP
+              </button>
+            </div>
+          </form>
+          <div class="form-contact r-block r-block-small r-block--secondary">
+            <div class="form-contact__container background-primary">
+              <h6 class="form-contact__title">Contact details</h6>
+              <ul class="form-contact__content">
+                <li>Ahmed Aboukar</li>
+                <li>Business Development</li>
+                <li>Arvato CRM Solutions</li>
+                <li>
+                  <a
+                    class="form-contact__content-link"
+                    href="mailto:crmse@arvato.co.uk"
+                  >
+                    crmse@arvato.co.uk
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script src="assets/js/page-one-components/video.js"></script>
+    <script src="assets/js/page-one-components/card.js"></script>
+    <script src="assets/js/page-one-components/agenda.js"></script>
+  </body>
+</html>

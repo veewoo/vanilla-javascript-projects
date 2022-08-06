@@ -1,0 +1,23 @@
+{
+  "name": "vanilla-javascript-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile": "sass assets/scss/:assets/css/ --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veewoo/vanilla-javascript-projects.git"
+  },
+  "author": "Veewoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veewoo/vanilla-javascript-projects/issues"
+  },
+  "homepage": "https://github.com/veewoo/vanilla-javascript-projects#readme",
+  "devDependencies": {
+    "sass": "^1.54.3"
+  }
+}

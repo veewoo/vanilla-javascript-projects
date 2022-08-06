@@ -1,0 +1,267 @@
+@import "./page-one-components/variables.scss";
+@import "./page-one-components/backgrounds.scss";
+@import "./page-one-components/typography.scss";
+@import "./page-one-components/buttons.scss";
+
+@import "./page-one-components/cards.scss";
+@import "./page-one-components/hero-banner.scss";
+@import "./page-one-components/tab.scss";
+@import "./page-one-components/form.scss";
+
+body {
+  font-family: $ultra-regular;
+  font-style: normal;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &.scroll-disabled {
+    overflow-y: hidden;
+  }
+}
+
+body:not(.arvato--b2c):not(.arvato--career) {
+  .nav-contact {
+    background-color: transparent;
+    color: $primary-color;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.user-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin: -37px 0;
+}
+
+.nav-contact {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17.6px;
+}
+
+.nav-search {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease z-index, 0.3s ease-in-out opacity;
+  &.active {
+    opacity: 1;
+    z-index: 0;
+  }
+}
+
+.content {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 1441px) {
+    padding-left: calc((100% - 1440px + 120px) / 2);
+    padding-right: calc((100% - 1440px + 120px) / 2);
+  }
+
+  &.content--py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.content--px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--py-md {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: 1200px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &--pr-0 {
+    padding-right: 0;
+  }
+
+  &--pr-xs-0 {
+    @media (max-width: 768px) {
+      padding-right: 0;
+    }
+  }
+
+  &__header {
+    font-family: $ultra-light;
+
+    &--mt-md {
+      display: inline-block;
+      width: 100%;
+      margin-top: 40px;
+
+      @media (min-width: 768px) {
+        margin-top: 60px;
+      }
+    }
+
+    &--mb-md {
+      margin-bottom: 40px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &--mw-md-short {
+      @media (min-width: 768px) {
+        max-width: 57%;
+      }
+    }
+
+    &--text-center {
+      text-align: center;
+    }
+
+    &--with-button {
+      .button {
+        margin-top: 20px;
+        background-color: inherit;
+
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+      @media (min-width: 1025px) {
+        display: flex;
+
+        .button {
+          align-self: flex-end;
+          margin-left: auto;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__header-description {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__header-button {
+    margin-top: 36px;
+  }
+
+  &__header-title {
+    font-family: $median-light;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+    margin-bottom: 16px;
+
+    @media (min-width: 1025px) {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    & + p {
+      font-family: inherit;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 300;
+
+      @media (min-width: 1025px) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+.hero-picture-block {
+  position: relative;
+}
+
+.desktop-only {
+  display: none;
+
+  @media (min-width: 1025px) {
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: block;
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+main {
+  .event__hero,
+  .main__hero {
+    .main__hero-buttons {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.arvato--b2c {
+  .event__hero-tag,
+  .editorial-card__tags span,
+  .insight-card__tags span {
+    background-color: #cbd7c6;
+  }
+}
+
+.card-list-container.swiper
+  .swiper-wrapper
+  + .swiper-pagination
+  .swiper-pagination-bullet {
+  height: 10px;
+  border-bottom: 2px solid #e7e4e2;
+  background-color: transparent;
+
+  &-active {
+    border-bottom: 2px solid #282828;
+  }
+}
