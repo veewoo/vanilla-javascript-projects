@@ -231,6 +231,7 @@
 .card {
   display: inline-flex;
   flex-direction: column;
+  border-radius: 8px;
 
   &.card--multiple.swiper-slide {
     display: grid;
