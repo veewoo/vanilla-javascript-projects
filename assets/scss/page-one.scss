@@ -129,8 +129,6 @@ a {
   }
 
   &__header {
-    font-family: $ultra-light;
-
     &--mt-md {
       display: inline-block;
       width: 100%;
@@ -190,7 +188,6 @@ a {
   }
 
   &__header-title {
-    font-family: $median-light;
     font-weight: 400;
     font-size: 28px;
     line-height: 31px;
@@ -202,7 +199,6 @@ a {
     }
 
     & + p {
-      font-family: inherit;
       font-size: 20px;
       line-height: 22px;
       font-weight: 300;

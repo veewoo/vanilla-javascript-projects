@@ -120,12 +120,8 @@ body.arvato--b2c .background-vanguard .r-block::before, body.arvato--b2c .backgr
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-  font-family: "Montserrat Alternates", sans-serif;
+h3 {
+  font-weight: bold;
 }
 
 h1 {
@@ -134,23 +130,19 @@ h1 {
 }
 @media (max-width: 767px) {
   h1 {
-    font-weight: 300;
     font-size: 48px;
     line-height: 53px;
   }
 }
 
 p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Ultra Regular", sans-serif;
 }
 
 .hero-picture-block:not(.hero-picture-block--dark) .hero-picture-block__button, .button-secondary, .hero-picture-block--dark .hero-picture-block__button, .background-primary .button-primary,
 .background-vanguard .button-primary, .button-primary {
   display: inline-block;
-  font-family: "Ultra Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -1175,14 +1167,6 @@ h2.card__title:not(.card__title--h1) {
 .form {
   flex: 1;
 }
-.form label {
-  font-family: "Ultra Regular", sans-serif;
-}
-.form input,
-.form select,
-.form option {
-  font-family: "Ultra Light", sans-serif;
-}
 .form__row {
   display: flex;
   flex-wrap: wrap;
@@ -1216,10 +1200,11 @@ h2.card__title:not(.card__title--h1) {
   margin-bottom: 5px;
 }
 .form__control {
-  padding: 11px 10px;
+  padding: 12px 10px;
   font-size: 16px;
   line-height: 24px;
   border: 1px solid #c9c9c9;
+  border-radius: 4px;
 }
 .form__select-container {
   position: relative;
@@ -1317,7 +1302,6 @@ h2.card__title:not(.card__title--h1) {
 }
 .form-contact__content {
   padding: 0 20px 20px 20px;
-  font-family: "Ultra Light", sans-serif;
 }
 .form-contact__content > * {
   margin-bottom: 4px;
@@ -1447,9 +1431,6 @@ a {
     padding-right: 0;
   }
 }
-.content__header {
-  font-family: "Ultra Light", sans-serif;
-}
 .content__header--mt-md {
   display: inline-block;
   width: 100%;
@@ -1501,7 +1482,6 @@ a {
   margin-top: 36px;
 }
 .content__header-title {
-  font-family: "Ultra Median Light", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 31px;
@@ -1514,7 +1494,6 @@ a {
   }
 }
 .content__header-title + p {
-  font-family: inherit;
   font-size: 20px;
   line-height: 22px;
   font-weight: 300;

@@ -1,17 +1,23 @@
-/* Error: Undefined variable.
- *    ,
- * 26 |   font-family: $ultra-regular;
- *    |                ^^^^^^^^^^^^^^
- *    '
- *   assets/scss/page-one-components/typography.scss 26:16  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 26 \2502    font-family: $ultra-regular;\a    \2502                 ^^^^^^^^^^^^^^\a    \2575 \a   assets/scss/page-one-components/typography.scss 26:16  root stylesheet";
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
+
+h1 {
+  font-size: 56px;
+  line-height: 62px;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+    line-height: 53px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/*# sourceMappingURL=typography.css.map */

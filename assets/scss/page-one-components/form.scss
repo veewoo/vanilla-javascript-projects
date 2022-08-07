@@ -28,16 +28,6 @@
 .form {
   flex: 1;
 
-  label {
-    font-family: $ultra-regular;
-  }
-
-  input,
-  select,
-  option {
-    font-family: $ultra-light;
-  }
-
   &__row {
     display: flex;
     flex-wrap: wrap;
@@ -75,10 +65,11 @@
   }
 
   &__control {
-    padding: 11px 10px;
+    padding: 12px 10px;
     font-size: 16px;
     line-height: 24px;
     border: 1px solid $chinese-silver;
+    border-radius: 4px;
   }
 
   &__select-container {
@@ -188,7 +179,6 @@
 
   &__content {
     padding: 0 20px 20px 20px;
-    font-family: $ultra-light;
 
     & > * {
       margin-bottom: 4px;
