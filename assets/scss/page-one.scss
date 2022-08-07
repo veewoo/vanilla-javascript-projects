@@ -3,12 +3,14 @@
 @import "./page-one-components/typography.scss";
 @import "./page-one-components/buttons.scss";
 
+@import "./page-one-components/header.scss";
 @import "./page-one-components/cards.scss";
 @import "./page-one-components/hero-banner.scss";
 @import "./page-one-components/tab.scss";
 @import "./page-one-components/form.scss";
 
 body {
+  margin: 0;
   font-family: "Montserrat Alternates", sans-serif;
 
   * {
@@ -20,41 +22,8 @@ body {
   }
 }
 
-body:not(.arvato--b2c):not(.arvato--career) {
-  .nav-contact {
-    background-color: transparent;
-    color: $primary-color;
-  }
-}
-
 a {
   text-decoration: none;
-}
-
-.user-links {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  margin: -37px 0;
-}
-
-.nav-contact {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 17.6px;
-}
-
-.nav-search {
-  width: 16px;
-  height: 16px;
-  display: flex;
-  align-items: center;
-  margin-right: 40px;
-  height: 100%;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .overlay {
@@ -237,14 +206,6 @@ main {
     .main__hero-buttons {
       margin-bottom: 32px;
     }
-  }
-}
-
-.arvato--b2c {
-  .event__hero-tag,
-  .editorial-card__tags span,
-  .insight-card__tags span {
-    background-color: #cbd7c6;
   }
 }
 

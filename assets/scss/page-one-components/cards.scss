@@ -3,137 +3,6 @@
   color: $primary-color;
 }
 
-.universal-cards {
-  .content__header {
-    &--with-button {
-      .button {
-        margin-top: 20px;
-        background-color: inherit;
-
-        &:hover {
-          background-color: $primary-color;
-        }
-      }
-      @media (min-width: 1025px) {
-        display: flex;
-
-        .button {
-          align-self: flex-end;
-          margin-left: auto;
-          margin-top: 0;
-        }
-      }
-    }
-  }
-
-  .content,
-  &.content {
-    @media (min-width: 1441px) {
-      padding-left: calc((100% - 1440px + 120px) / 2);
-      padding-right: calc((100% - 1440px + 120px) / 2);
-    }
-  }
-
-  &.universal-cards--desktop-noslider {
-    .card-list {
-      display: flex;
-
-      @media (min-width: 1025px) {
-        margin-bottom: -30px;
-        flex-wrap: wrap;
-      }
-    }
-    .card.swiper-slide {
-      width: 100%;
-      max-width: 300px;
-    }
-
-    &.universal-cards--3-in-row {
-      @media (min-width: 1025px) {
-        .card.swiper-slide {
-          width: 100%;
-          max-width: 413px;
-          margin-bottom: 30px;
-
-          &:not(:last-child) {
-            margin-right: 40px !important;
-          }
-        }
-      }
-    }
-
-    &.universal-cards--4-in-row {
-      @media (min-width: 1025px) {
-        .card.swiper-slide {
-          width: 100%;
-          max-width: 300px;
-          margin-bottom: 30px;
-
-          &:not(:last-child) {
-            margin-right: 40px !important;
-          }
-        }
-      }
-    }
-
-    @media (min-width: 1025px) {
-      &.universal-cards--5-8-in-row {
-        .card-list {
-          margin-bottom: -30px;
-          justify-content: space-between;
-        }
-        .card.swiper-slide {
-          margin-bottom: 30px;
-          margin-right: 0 !important;
-          max-width: 413px;
-          &:nth-child(1),
-          &:nth-child(2) {
-            width: 48.5%;
-            min-height: 580px;
-            max-width: none;
-            .card__image-container {
-              height: auto;
-            }
-
-            picture {
-              height: 375px;
-              display: block;
-              position: relative;
-              img {
-                height: 375px;
-              }
-            }
-          }
-        }
-      }
-
-      &.universal-cards--2-in-row {
-        .card-list.swiper-wrapper {
-          display: flex;
-          justify-content: space-between;
-        }
-        .card.swiper-slide {
-          width: 48.5%;
-          min-height: 580px;
-          max-width: none;
-          .card__image-container {
-            height: auto;
-          }
-
-          picture {
-            height: 375px;
-            display: block;
-            position: relative;
-            img {
-              height: 375px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .card-list {
   @mixin gridProperties {
     display: grid;
@@ -354,6 +223,10 @@
     &--text-right {
       text-align: right;
       justify-content: flex-end;
+    }
+
+    &--mt-0 {
+      margin-top: 0;
     }
 
     &--mt-auto {

@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__nav-link-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__nav-link {
+    margin-left: 8px;
+  }
+
+  &__nav-link:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__link {
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
