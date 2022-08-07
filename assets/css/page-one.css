@@ -359,7 +359,7 @@ h2.card__title:not(.card__title--h1) {
 .card h5.card__title {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 22px;
   line-height: 24.2px;
 }
@@ -372,9 +372,6 @@ h2.card__title:not(.card__title--h1) {
 .card .card__sub-title--text-right, .card .card__title--text-right, .card .card__description--text-right {
   text-align: right;
   justify-content: flex-end;
-}
-.card .card__sub-title--mt-0, .card .card__title--mt-0, .card .card__description--mt-0 {
-  margin-top: 0;
 }
 .card .card__sub-title--mt-auto, .card .card__title--mt-auto, .card .card__description--mt-auto {
   margin-top: auto;
@@ -416,6 +413,7 @@ h2.card__title:not(.card__title--h1) {
 }
 .card__link {
   font-size: 14px;
+  text-decoration: underline;
 }
 
 .experts-cards__subtitle {
@@ -1164,6 +1162,7 @@ h2.card__title:not(.card__title--h1) {
 body {
   margin: 0;
   font-family: "Montserrat Alternates", sans-serif;
+  color: #425664;
 }
 body * {
   box-sizing: border-box;
@@ -1174,6 +1173,11 @@ body.scroll-disabled {
 
 a {
   text-decoration: none;
+  color: #425664;
+}
+
+p {
+  margin-top: 0;
 }
 
 .overlay {
