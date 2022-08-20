@@ -1,0 +1,26 @@
+.veewoo-o-grid {
+  position: relative;
+}
+.veewoo-o-grid > .row {
+  margin-right: -px2rem(20px);
+}
+.veewoo-o-grid__item {
+  padding-bottom: px2rem(20px);
+  padding-right: px2rem(20px);
+}
+.veewoo-o-grid__image-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.veewoo-o-grid .veewoo-m-product-media-card {
+  height: 100%;
+}
+.veewoo-o-grid .swiper-wrapper {
+  align-items: center;
+}
+.veewoo-o-grid .modal-content {
+  background: transparent;
+  border: none;
+}
+
+/*# sourceMappingURL=grid.css.map */

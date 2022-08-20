@@ -1,0 +1,7 @@
+.veewoo-container-fluid {
+  width: 100%;
+}
+
+.veewoo-container {
+  @include veewoo-container;
+}

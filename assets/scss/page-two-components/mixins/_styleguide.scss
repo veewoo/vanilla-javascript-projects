@@ -1,0 +1,343 @@
+@mixin h1-xxl {
+  font-family: $font-santral;
+  font-size: 4.375rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: -#{px2rem(1px)};
+}
+
+@mixin h1-xl-centered {
+  font-family: $font-santral;
+  font-size: 3.75rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: -#{px2rem(1px)};
+  text-align: center;
+}
+
+@mixin h1-xl {
+  font-family: $font-santral;
+  font-size: 3.75rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: -#{px2rem(1px)};
+}
+
+@mixin h1 {
+  font-family: $font-santral;
+  font-size: 3.125rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: -#{px2rem(1px)};
+}
+
+@mixin h2-quote {
+  font-family: $font-santral;
+  font-size: 2.5rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -#{px2rem(1px)};
+}
+
+@mixin h2-centered-blue {
+  font-family: $font-santral;
+  font-size: 2.5rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: -#{px2rem(1px)};
+  text-align: center;
+}
+
+@mixin h2-centered {
+  font-family: $font-santral;
+  font-size: 2.5rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: -#{px2rem(1px)};
+  text-align: center;
+}
+
+@mixin h2 {
+  font-family: $font-santral;
+  font-size: 2.5rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: -#{px2rem(1px)};
+}
+
+@mixin h3-centered {
+  font-family: $font-santral;
+  font-size: 1.875rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: -#{px2rem(0.5px)};
+  text-align: center;
+}
+
+@mixin h3 {
+  font-family: $font-santral;
+  font-size: 1.875rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: -#{px2rem(0.5px)};
+}
+
+@mixin h4 {
+  font-family: $font-santral;
+  font-size: 1.563rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+@mixin h5-centered {
+  font-family: $font-santral;
+  font-size: 1.25rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -#{px2rem(0.5px)};
+  text-align: center;
+}
+
+@mixin h5 {
+  font-family: $font-santral;
+  font-size: 1.25rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -#{px2rem(0.5px)};
+}
+
+@mixin h5-semi-bold-centered {
+  font-family: $font-santral;
+  font-size: 1.25rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -#{px2rem(0.5px)};
+  text-align: center;
+}
+
+@mixin h5-semi-bold {
+  font-family: $font-santral;
+  font-size: 1.25rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -#{px2rem(0.5px)};
+}
+
+@mixin h5-intro-centered {
+  font-family: $font-santral;
+  font-size: 1.25rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -#{px2rem(0.5px)};
+  text-align: center;
+}
+
+@mixin h5-intro {
+  font-family: $font-santral;
+  font-size: 1.25rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -#{px2rem(0.5px)};
+}
+
+@mixin h6-bold {
+  font-family: $font-santral;
+  font-size: 1.125rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: -#{px2rem(0.5px)};
+}
+
+@mixin h6-semi-bold {
+  font-family: $font-santral;
+  font-size: 1.125rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+}
+
+@mixin h7-bold {
+  font-family: $font-santral;
+  font-size: 1rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: -#{px2rem(0.25px)};
+}
+
+@mixin h7 {
+  font-family: $font-santral;
+  font-size: 1rem;
+  font-weight: $bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: -#{px2rem(0.25px)};
+}
+
+@mixin country-list {
+  font-family: $font-santral;
+  font-size: 0.938rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: -#{px2rem(0.34px)};
+  color: $white-p;
+}
+
+@mixin h8-menu {
+  font-family: $font-santral;
+  font-size: 0.938rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -#{px2rem(0.25px)};
+}
+
+@mixin h8 {
+  font-family: $font-santral;
+  font-size: 0.938rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}
+
+@mixin search-category {
+  font-family: $font-opensans;
+  font-size: 0.75rem;
+  font-weight: $bold;
+  line-height: 1.92;
+}
+
+@mixin search-description {
+  font-family: $font-opensans;
+  font-size: 0.75rem;
+  line-height: 1.67;
+}
+
+@mixin breadcrumb-1 {
+  font-family: $font-opensans;
+  font-size: 0.75rem;
+  font-weight: $bold;
+  line-height: 1.33;
+  letter-spacing: -(px2rem(0.2px));
+}
+
+@mixin body-product-cards-centered {
+  font-family: $font-opensans;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@mixin body-product-cards {
+  font-family: $font-opensans;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: $lava;
+}
+
+@mixin caption-centered {
+  font-family: $font-opensans;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: $lava;
+}
+
+@mixin focus-intro-and-list {
+  font-family: $font-santral;
+  font-size: 1.125rem;
+  font-weight: $semi-bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+}
+
+@mixin body {
+  font-family: $font-opensans;
+  font-size: 0.938rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+}
+
+@mixin body-centered {
+  font-family: $font-opensans;
+  font-size: 0.938rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@mixin call-out-header-centered {
+  font-family: $font-santral;
+  font-size: 0.938rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}

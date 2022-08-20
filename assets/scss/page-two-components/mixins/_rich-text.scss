@@ -1,0 +1,23 @@
+@mixin veewoo-rich-text {
+  p {
+    margin: 1em 0;
+
+    a:not(.veewoo-a-link--animation-on-hover) {
+      color: var(--link-color);
+
+      &:not(.veewoo-a-link--bg-sand) {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@mixin veewoo-break-word {
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

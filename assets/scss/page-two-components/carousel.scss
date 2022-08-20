@@ -1,0 +1,208 @@
+.veewoo-o-carousel {
+  @include veewoo-theme;
+  position: relative;
+  width: 100%;
+
+  &--has-cta {
+    .swiper-pagination-custom,
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      @include tablet {
+        width: 100%;
+        grid-area: 1/2/1/3;
+      }
+    }
+
+    &__pagination {
+      @include tablet {
+        float: right;
+      }
+    }
+
+    & .veewoo-m-hero-banner {
+      grid-template-rows: initial;
+
+      @include tablet {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 70% 30%;
+      }
+
+      @include desktop {
+        grid-template-columns: 75% 25%;
+      }
+
+      &__content {
+        @include tablet {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    & .veewoo-m-link-with-icon-list--bg-white {
+      grid-area: 1/3/1/4;
+    }
+
+    .veewoo-o-carousel__pagination-cta {
+      @include tablet {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+      }
+
+      @include desktop {
+        grid-template-columns: 25% 30% 25%;
+      }
+    }
+  }
+
+  &--content-width-50 {
+    .swiper-slide > * {
+      @include tablet {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &[data-has-navigation="true"] {
+    .swiper-wrapper {
+      align-items: center;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__pagination--white-p &__bullet > div {
+    background-color: $wave-ac;
+    span {
+      background-color: $white-p;
+    }
+  }
+
+  &__bullet-container {
+    width: 100%;
+    max-width: px2rem(138px);
+    margin: 0 0.5rem;
+  }
+
+  &__bullet {
+    width: 100%;
+    max-width: px2rem(47px);
+    margin: 0 px2rem(6px);
+    padding: px2rem(21px) 0 0 0;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    @include desktop {
+      max-width: px2rem(138px);
+    }
+
+    & > div {
+      position: relative;
+      width: 100%;
+      height: 0.25rem;
+      background-color: $wave-ac;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0.25rem;
+      background-color: $veewoo-blue-p;
+    }
+
+    &--active {
+      span {
+        width: 100%;
+        transition: width 2s ease;
+      }
+    }
+  }
+
+  &__button-next,
+  &__button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      border-style: solid;
+      border-color: var(--text-color);
+      border-width: 0 px2rem(4px) px2rem(4px) 0;
+      display: inline-block;
+      padding: px2rem(8px);
+
+      @include desktop {
+        padding: px2rem(12px);
+      }
+    }
+  }
+
+  &__button-next {
+    right: -1rem;
+
+    @include desktop {
+      right: -2rem;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__button-prev {
+    left: -1rem;
+
+    @include desktop {
+      left: -2rem;
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+  }
+
+  &.veewoo-container {
+    .veewoo-o-carousel__button-next {
+      right: 0.5rem;
+
+      @include desktop {
+        right: 2rem;
+      }
+    }
+
+    .veewoo-o-carousel__button-prev {
+      left: 0.5rem;
+
+      @include desktop {
+        left: 2rem;
+      }
+    }
+  }
+
+  .swiper-slide {
+    background-color: var(--bg-color);
+  }
+}

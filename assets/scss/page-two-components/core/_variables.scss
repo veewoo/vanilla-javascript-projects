@@ -1,0 +1,19 @@
+/* For margin or padding */
+$spacing-0: 0;
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 3rem;
+
+/*#region Elevation*/
+$elevation-background: -9999;
+/*#endregion*/
+
+/*#region Box Shadow*/
+$shadow-primary: 0 0 0.9375rem 0 rgba(0, 0, 0, 0.15);
+/*#endregion*/
+
+$page-width: var(--page-width);
+$container-width: 1200px;
+$container-margin-x: calc((#{$page-width} - #{$container-width}) / 2);

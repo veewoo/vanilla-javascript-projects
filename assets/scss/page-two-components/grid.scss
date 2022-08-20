@@ -1,0 +1,30 @@
+.veewoo-o-grid {
+  position: relative;
+
+  & > .row {
+    margin-right: -(px2rem(20px));
+  }
+
+  &__item {
+    padding-bottom: px2rem(20px);
+    padding-right: px2rem(20px);
+  }
+
+  &__image-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .veewoo-m-product-media-card {
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .modal-content {
+    background: transparent;
+    border: none;
+  }
+}

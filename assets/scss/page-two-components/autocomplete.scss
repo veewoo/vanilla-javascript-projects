@@ -1,0 +1,52 @@
+.autoComplete_wrapper {
+  display: inline-block;
+  position: relative;
+
+  & > input {
+    height: 2.5rem;
+    border: none;
+    color: rgba(67, 67, 66, 0.3);
+    background-image: url(/assets/icons/page-two/search.svg);
+    background-size: 1.4rem;
+    background-position: left 1.05rem top 0.6rem;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+    &::placeholder {
+      font-weight: normal;
+      color: rgba(67, 67, 66, 0.5);
+      transition: all 0.3s ease;
+      -webkit-transition: all -webkit-transform 0.3s ease;
+    }
+
+    &:hover::placeholder {
+      color: rgba(67, 67, 66, 0.6);
+      transition: all 0.3s ease;
+      -webkit-transition: all -webkit-transform 0.3s ease;
+    }
+
+    &:focus {
+      border: none;
+    }
+
+    &:focus::placeholder {
+      padding: 0.1rem 0.6rem;
+      font-size: 0.95rem;
+      color: rgba(67, 67, 66, 0.4);
+    }
+
+    &:focus::selection {
+      background-color: rgba(67, 67, 66, 0.15);
+    }
+
+    &::selection {
+      background-color: rgba(67, 67, 66, 0.15);
+    }
+
+    &:hover {
+      color: rgba(67, 67, 66, 0.8);
+      transition: all 0.3s ease;
+      -webkit-transition: all -webkit-transform 0.3s ease;
+    }
+  }
+}

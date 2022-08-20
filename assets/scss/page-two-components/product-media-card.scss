@@ -1,0 +1,26 @@
+.veewoo-m-product-media-card {
+  padding: px2rem(10px);
+  background-color: $white-p;
+  box-shadow: $shadow-primary;
+
+  &__thumbnail {
+    margin-bottom: px2rem(20px);
+  }
+
+  &__title,
+  &__description {
+    color: $lava;
+    padding-left: px2rem(10px);
+    padding-right: px2rem(10px);
+  }
+
+  &__title {
+    margin-bottom: px2rem(5px);
+    @include h5;
+  }
+
+  &__description {
+    margin-bottom: px2rem(20px);
+    @include body-product-cards;
+  }
+}

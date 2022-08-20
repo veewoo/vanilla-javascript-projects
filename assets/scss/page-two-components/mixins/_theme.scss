@@ -1,0 +1,153 @@
+@mixin veewoo-theme {
+  --text-color: #{$lava};
+  --heading-color: var(--text-color);
+  --bg-color: #{$white-p};
+  --link-color: #{$veewoo-blue-p};
+
+  --button-bg-color: #{$veewoo-blue-p};
+  --button-bg-inactive-color: #{$wave-50};
+  --button-fg-color: #{$white-p};
+  --button-fg-inactive-color: #{$white-p};
+  --button-bg-hover-color: #{$veewoo-blue-90};
+  --button-fg-hover-color: #{#{$white-p}};
+
+  p {
+    a:not(.veewoo-a-link--animation-on-hover) {
+      color: var(--link-color);
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  a.veewoo-a-link--btn {
+    --bg-color: var(--button-bg-color);
+    --bg-inactive-color: var(--button-bg-inactive-color);
+    --fg-color: var(--button-fg-color);
+    --fg-inactive-color: var(--button-fg-inactive-color);
+    --bg-hover-color: var(--button-bg-hover-color);
+    --fg-hover-color: var(--button-fg-hover-color);
+
+    color: var(--button-fg-color);
+    text-decoration: none;
+  }
+
+  &.veewoo-theme-white-p {
+    --text-color: #{$lava};
+    --bg-color: #{$white-p};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-sand-s {
+    --text-color: #{$lava};
+    --bg-color: #{$sand-s};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-flow-25 {
+    --text-color: #{$lava};
+    --bg-color: #{$flow-25};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-blue-p {
+    --text-color: #{$white-p};
+    --bg-color: #{$veewoo-blue-p};
+    --link-color: #{$white-p};
+
+    --button-bg-color: #{$white-p};
+    --button-bg-inactive-color: #{$veewoo-blue-p};
+    --button-fg-color: #{$veewoo-blue-p};
+    --button-fg-inactive-color: #{$veewoo-blue-p};
+    --button-bg-hover-color: #{$wave-50};
+    --button-fg-hover-color: #{$veewoo-blue-p};
+  }
+
+  &.veewoo-theme-wave-ac {
+    --text-color: #{$lava};
+    --bg-color: #{$wave-ac};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-wave-50 {
+    --text-color: #{$lava};
+    --bg-color: #{$wave-50};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-pearl-s {
+    --text-color: #{$lava};
+    --bg-color: #{$pearl-s};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-pebble-s {
+    --text-color: #{$lava};
+    --bg-color: #{$pebble-s};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-header-blue-p {
+    --heading-color: #{$veewoo-blue-p};
+  }
+
+  &.veewoo-theme-header-rock-s {
+    --heading-color: #{$rock-s};
+  }
+
+  &.veewoo-theme-header-sway-ac {
+    --heading-color: #{$sway-ac};
+  }
+
+  &.veewoo-theme-header-flow-ac {
+    --heading-color: #{$flow-ac};
+  }
+
+  &.veewoo-theme-header-lava {
+    --heading-color: #{$lava};
+  }
+
+  &.veewoo-theme-header-beam-ac {
+    --heading-color: #{$beam-ac};
+  }
+
+  &.veewoo-theme-header-white-p {
+    --heading-color: #{$white-p};
+  }
+
+  &.veewoo-theme-button-blue-p {
+    --button-bg-color: #{$veewoo-blue-p};
+    --button-fg-color: #{$white-p};
+    --button-bg-inactive-color: #{$wave-50};
+    --button-fg-inactive-color: #{$white-p};
+    --button-bg-hover-color: #{$veewoo-blue-90};
+    --button-fg-hover-color: #{$white-p};
+  }
+
+  &.veewoo-theme-button-wave-ac {
+    --button-bg-color: #{$wave-ac};
+    --button-fg-color: #{$veewoo-blue-p};
+    --button-bg-inactive-color: #{$wave-ac};
+    --button-fg-inactive-color: #{$veewoo-blue-p};
+    --button-bg-hover-color: #{$wave-50};
+    --button-fg-hover-color: #{$veewoo-blue-p};
+  }
+
+  &.veewoo-theme-button-white-p {
+    --button-bg-color: #{$white-p};
+    --button-fg-color: #{$veewoo-blue-p};
+    --button-bg-inactive-color: #{$wave-50};
+    --button-fg-inactive-color: #{$veewoo-blue-p};
+    --button-bg-hover-color: #{$wave-50};
+    --button-fg-hover-color: #{$veewoo-blue-p};
+  }
+}

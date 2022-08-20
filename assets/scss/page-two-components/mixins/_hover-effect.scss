@@ -1,0 +1,57 @@
+@mixin hover-effect-card-arrow {
+  transition: 200ms ease-in;
+  box-shadow: 0.45rem 0.45rem $wave-ac;
+  max-width: calc(100% - 0.45rem);
+
+  &:hover {
+    box-shadow: 0.25rem 0.25rem $wave-ac;
+  }
+}
+
+@mixin hover-effect-card {
+  &:hover {
+    transition: 200ms ease-in;
+    transform: scale(1.02);
+    box-shadow: 0.25rem 0.25rem $wave-ac;
+  }
+}
+
+@mixin hover-effect-main-menu-bar {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1rem;
+    width: 0px;
+    height: 5px;
+    background: #333; // TODO: Remove hard code
+    transition: all 0.45s;
+
+    &:hover {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@mixin hover-effect-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.1rem;
+    width: 0px;
+    height: px2rem(1px);
+    background: #333; // TODO: remove hard code
+    transition: all 0.4s;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}

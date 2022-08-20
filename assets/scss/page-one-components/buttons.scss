@@ -15,19 +15,6 @@
   }
 }
 
-%button-small {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 15px;
-  padding: 10px 12px;
-  transition: 0.4s color, 0.4s background-color;
-
-  &.hidden {
-    display: none;
-  }
-}
-
 %button-primary {
   @extend %button;
   background-color: $primary-color;

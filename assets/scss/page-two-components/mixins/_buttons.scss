@@ -1,0 +1,109 @@
+@mixin veewoo-button {
+  vertical-align: middle;
+  &--btn {
+    --border-radius: #{px2rem(18.5px)};
+    --bg-color: #{$veewoo-blue-p};
+    --bg-inactive-color: #{$wave-50};
+    --fg-color: #{$white-p};
+    --fg-inactive-color: #{$white-p};
+    --padding-y: #{px2rem(11.02px)};
+    --padding-x: #{px2rem(44.02px)};
+    --font-size: #{px2rem(14px)};
+    --letter-spacing: -#{(px2rem(0.19px))};
+    --line-height: 1.07;
+    --bg-hover-color: #{$veewoo-blue-90};
+    --fg-hover-color: #{$white-p};
+    --link-color: #{$white-p};
+
+    position: relative;
+    font-family: $font-santral;
+    font-weight: $bold;
+    font-size: var(--font-size);
+    letter-spacing: var(--letter-spacing);
+    padding: var(--padding-y) var(--padding-x);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    color: var(--fg-color);
+    border: none;
+    background-color: var(--bg-color);
+    line-height: var(--line-height);
+    text-align: center;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 0%;
+      display: inline;
+      position: absolute;
+      background-color: var(--bg-hover-color);
+      top: 0;
+      left: 50%;
+      border-radius: px2rem(30px);
+    }
+
+    &:hover {
+      transform: scale(1);
+
+      &::before {
+        z-index: -1;
+        transition: 400ms;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  &--bg-flow {
+    --bg-color: #{$flow-ac};
+    --fg-color: #{$white-p};
+    --bg-hover-color: #{$flow-25};
+    --fg-hover-color: #{$flow-ac};
+  }
+
+  &--btn-white {
+    --bg-color: #{$white-p};
+    --fg-color: #{$veewoo-blue-p};
+    --bg-hover-color: #{$wave-50};
+    --fg-hover-color: #{$veewoo-blue-p};
+  }
+
+  &--btn-wave {
+    --bg-color: #{$wave-ac};
+    --fg-color: #{$veewoo-blue-p};
+    --bg-hover-color: #{$wave-50};
+    --fg-hover-color: #{$veewoo-blue-p};
+  }
+
+  &--btn-filter {
+    --bg-color: #{$white-p};
+    --fg-color: #{$rock-s};
+    --bg-hover-color: #{$rock-s};
+    --fg-hover-color: #{$white-p};
+  }
+
+  &--btn-sm {
+    --font-size: #{px2rem(11.2px)};
+    --letter-spacing: -#{(px2rem(0.15px))};
+    --padding-y: #{px2rem(8.96px)};
+    --padding-x: #{px2rem(48.32px)};
+    --border-radius: #{px2rem(14.5px)};
+    --line-height: 1.08;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &:disabled,
+  &[disabled] {
+    color: var(--fg-inactive-color);
+    background-color: var(--bg-inactive-color);
+    pointer-events: none;
+    cursor: not-allowed;
+
+    &::before {
+      content: none;
+    }
+  }
+}

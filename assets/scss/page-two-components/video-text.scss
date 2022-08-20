@@ -1,0 +1,66 @@
+.veewoo-o-video-text {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $white-p;
+
+  --text-container-width: 33%;
+  --video-container-width: 67%;
+
+  &--video-full-width {
+    --video-container-width: 100%;
+  }
+
+  &__video-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+    @include desktop {
+      width: var(--video-container-width);
+    }
+
+    .veewoo-a-wistia-video,
+    .wistia_responsive_padding {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text-container {
+    width: 100%;
+    padding: px2rem(15px) px2rem(20px) px2rem(25px) px2rem(20px);
+    box-sizing: border-box;
+
+    h3 {
+      margin-bottom: px2rem(10px);
+      font-size: px2rem(25px);
+
+      @include desktop {
+        margin-bottom: px2rem(17px);
+        font-size: px2rem(30px);
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: px2rem(30px);
+      font-size: px2rem(16px);
+
+      @include desktop {
+        margin-bottom: px2rem(36px);
+        font-size: px2rem(15px);
+      }
+    }
+
+    @include desktop {
+      width: var(--text-container-width);
+      padding: px2rem(30px) px2rem(40px) px2rem(40px) px2rem(40px);
+    }
+  }
+
+  .veewoo-a-link {
+    display: inline-block;
+  }
+}
